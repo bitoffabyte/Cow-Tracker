@@ -7,7 +7,7 @@ export const useAuth = () => {
 	return useContext(AuthContext);
 };
 const AuthProvider = ({ children }) => {
-	const [currentUser, setCurrentUser] = useState();
+	const [currentUser, setCurrentUser] = useState('');
 	const signin = () => {
 		const provider = new firebase.auth.GoogleAuthProvider();
 		auth.signInWithPopup(provider);
