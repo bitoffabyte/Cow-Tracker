@@ -64,8 +64,7 @@ const Home = () => {
 		}
 	}, [currentUser]);
 	return (
-		<div>
-			{currentUser && currentUser.email}
+		<div className='dib'>
 			<br />
 			cow list
 			<button>map</button>

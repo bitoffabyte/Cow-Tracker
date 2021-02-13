@@ -12,7 +12,9 @@ const AuthProvider = ({ children }) => {
 		const provider = new firebase.auth.GoogleAuthProvider();
 		auth.signInWithPopup(provider);
 	};
-
+	const signOut = () => {
+		auth.signOut();
+	};
 	useEffect(() => {
 		const uns = auth.onAuthStateChanged((user) => {
 			setCurrentUser(user);
@@ -23,6 +25,7 @@ const AuthProvider = ({ children }) => {
 	const value = {
 		currentUser,
 		signin,
+		signOut,
 	};
 	return (
 		<AuthContext.Provider value={value}>{children}</AuthContext.Provider>

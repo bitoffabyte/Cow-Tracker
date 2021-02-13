@@ -1,0 +1,28 @@
+.img {
+	position: fixed;
+	height: 100vh !important;
+	width: 100vw;
+	background-image: url('../Assets/bg.png'); /* The image used */
+	background-color: #cccccc; /* Used if the image is unavailable */
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+	z-index: 1;
+}
+.sss {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	z-index: 2;
+	background: linear-gradient(
+		330.24deg,
+		rgba(11, 29, 38, 0) 31.06%,
+		#0b1d26 108.93%
+	);
+}
+@media screen and (max-width: 720px) {
+	img {
+		height: 100vh;
+	}
+}
