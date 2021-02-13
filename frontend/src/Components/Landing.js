@@ -1,15 +1,18 @@
 // import { useContext } from 'react';
 import { useAuth } from '../Context/AuthProvider';
 import { useHistory } from 'react-router-dom';
+import img from '../Assets/signin.svg';
 const Landing = () => {
 	// const firebase = useContext(FirebaseContext);
 	// console.log(firebase);
 	const history = useHistory();
-	const { signin } = useAuth();
+	const { signin, signOut } = useAuth();
+	signOut();
 	return (
-		<div>
-			HHi there
-			<button
+		<div className='dib bid'>
+			<h1>Cow Tracker</h1>
+			<img
+				src={img}
 				onClick={async () => {
 					try {
 						await signin();
@@ -18,9 +21,7 @@ const Landing = () => {
 						console.log(e);
 					}
 				}}
-			>
-				Signin
-			</button>
+			></img>
 		</div>
 	);
 };
