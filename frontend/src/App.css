@@ -14,3 +14,19 @@ body,
 	position: relative;
 	z-index: 100;
 }
+.bid {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.bid h1 {
+	font-family: Chronicle Display;
+	font-style: normal;
+	font-weight: 500;
+	color: #fff;
+	font-size: 7vw;
+}
+.bid img {
+	cursor: pointer;
+}

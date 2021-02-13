@@ -10,6 +10,9 @@ const AuthProvider = ({ children }) => {
 	const [currentUser, setCurrentUser] = useState('');
 	const signin = () => {
 		const provider = new firebase.auth.GoogleAuthProvider();
+		provider.setCustomParameters({
+			prompt: 'select_account',
+		});
 		auth.signInWithPopup(provider);
 	};
 	const signOut = () => {

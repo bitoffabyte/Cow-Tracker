@@ -9,7 +9,8 @@ const Landing = () => {
 	const { signin, signOut } = useAuth();
 	signOut();
 	return (
-		<div className='dib'>
+		<div className='dib bid'>
+			<h1>Cow Tracker</h1>
 			<img
 				src={img}
 				onClick={async () => {
