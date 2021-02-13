@@ -37,6 +37,7 @@ const Home = () => {
 			long: 0,
 			heart: 0,
 			temp: 0,
+			id: n,
 		});
 		database
 			.ref('users/' + currentUser.uid + '/cows')
