@@ -16,7 +16,7 @@ Moometer is one unique way to solve three problems faced by cattle owners. It is
 The final project is in the form of a cattle collar that has various sensors inside it in the form of a housing. It has the web-app interface that can be inititated and connected to the collar.
 
 ## Technology Stack  
-React Nodejs ExpressJS Arduino Fusion 360 Firebase Proteus
+React<br/> Nodejs<br/> ExpressJS<br/> Arduino<br/> Fusion 360<br/> Firebase<br/> Proteus
 
 ### Fusion 360
 
