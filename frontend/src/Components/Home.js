@@ -3,7 +3,10 @@ import { useAuth } from '../Context/AuthProvider';
 import firebase from 'firebase';
 import 'firebase/database';
 import Loading from './Loading';
+import { useHistory } from 'react-router-dom';
+
 const Home = () => {
+	const history = useHistory();
 	const { currentUser } = useAuth();
 	const [n, uN] = useState('');
 	const [cows, updateCows] = useState([]);
@@ -79,7 +82,9 @@ const Home = () => {
 			>
 				<h1>Cow List</h1>
 			</p>
-			<button className='btn'>map</button>
+			<button className='btn' onClick={() => history.push('/map')}>
+				map
+			</button>
 			<br />
 			<div className='cows'>
 				{cows.map((i) => {
