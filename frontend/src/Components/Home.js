@@ -60,9 +60,9 @@ const Home = () => {
 					if (snapshot.exists()) {
 						const notif = snapshot.val();
 						updateCows([...Object.values(notif)]);
+						uL(false);
 					}
 				});
-			uL(false);
 		}
 	}, [currentUser]);
 	return (
