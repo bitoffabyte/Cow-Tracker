@@ -43,11 +43,17 @@ Used firebase for authentication and realtime database to get live updates of co
 Used Proteus to create and simulate the circuit
 
 ## Picture/Screenshot 1
-<img src="source">
+<img src="./imgs/1.jpeg">
 
 ## Picture/Screenshot 2
-<img src="source" >
+<img src="./imgs/2.jpeg">
   
+## Picture/Screenshot 3
+<img src="./imgs/3.jpeg">
+
+## Picture/Screenshot 4
+<img src="./imgs/4.jpeg">
+
 
 ## Prerequisites
 
