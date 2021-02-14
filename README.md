@@ -54,7 +54,7 @@ Used Proteus to create and simulate the circuit
 ## Picture/Screenshot 4
 <img src="./imgs/4.jpeg">
 
-## Picture/Screenshot 4
+## Picture/Screenshot 5
 <img src="./imgs/5.jpeg">
 
 ## Prerequisites
