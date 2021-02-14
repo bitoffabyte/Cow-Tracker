@@ -66,6 +66,13 @@ const Home = () => {
 						uL(false);
 					}
 				});
+			database.ref('cows/').on('value', (snapshot) => {
+				if (snapshot.exists()) {
+					const notif = snapshot.val();
+					console.log(notif);
+					updateCows([...Object.values(notif)]);
+				}
+			});
 		}
 	}, [currentUser]);
 	return (
