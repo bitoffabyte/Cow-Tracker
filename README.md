@@ -17,13 +17,30 @@ The final project is in the form of a cattle collar that has various sensors ins
 
 ## Technology Stack  
 React Nodejs ExpressJS Arduino Fusion 360 Firebase Proteus
+
 ### Fusion 360
 
 Basic CAD of the whole project
 
-### Tech2
+### React
 
-description
+Used react to make a web app to display the details of the cows for each user
+
+### Node + Express JS
+
+Created a middleware backend to interface between the arduino and firebase
+
+### Arduino
+
+Used the arduino to get the vitals and the location of the cows and to detect theft detection, also sends all the data to the server 
+
+### Firebase
+
+Used firebase for authentication and realtime database to get live updates of cows
+
+### Proteus
+
+Used Proteus to create and simulate the circuit
 
 ## Picture/Screenshot 1
 <img src="source">
