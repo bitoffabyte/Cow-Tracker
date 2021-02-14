@@ -2,12 +2,13 @@ import { useEffect, useState } from 'react';
 import { useAuth } from '../Context/AuthProvider';
 import firebase from 'firebase';
 import 'firebase/database';
-
+import Loading from './Loading';
 const Home = () => {
 	const { currentUser } = useAuth();
 	const [n, uN] = useState('');
 	const [cows, updateCows] = useState([]);
 	var database = firebase.database();
+	const [l, uL] = useState(true);
 	const checkData = () => {
 		database
 			.ref()
@@ -61,10 +62,12 @@ const Home = () => {
 						updateCows([...Object.values(notif)]);
 					}
 				});
+			uL(false);
 		}
 	}, [currentUser]);
 	return (
 		<div className='dib'>
+			{l ? <Loading /> : null}
 			<br />
 			cow list
 			<button>map</button>

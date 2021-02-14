@@ -5,6 +5,7 @@ import AuthProvider from './Context/AuthProvider';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './Components/Home';
 import Bg from './Components/bg';
+import Loading from './Components/Loading';
 function App() {
 	return (
 		<Router>
