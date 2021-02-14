@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Cow-Tracker/static/css/main.03c32e5a.chunk.css",
+    "main.css": "/Cow-Tracker/static/css/main.cf8bef03.chunk.css",
     "main.js": "/Cow-Tracker/static/js/main.50aec1ef.chunk.js",
     "main.js.map": "/Cow-Tracker/static/js/main.50aec1ef.chunk.js.map",
     "runtime-main.js": "/Cow-Tracker/static/js/runtime-main.a6409ef9.js",
@@ -10,7 +10,7 @@
     "static/js/3.3618b794.chunk.js": "/Cow-Tracker/static/js/3.3618b794.chunk.js",
     "static/js/3.3618b794.chunk.js.map": "/Cow-Tracker/static/js/3.3618b794.chunk.js.map",
     "index.html": "/Cow-Tracker/index.html",
-    "static/css/main.03c32e5a.chunk.css.map": "/Cow-Tracker/static/css/main.03c32e5a.chunk.css.map",
+    "static/css/main.cf8bef03.chunk.css.map": "/Cow-Tracker/static/css/main.cf8bef03.chunk.css.map",
     "static/js/2.a6ae0356.chunk.js.LICENSE.txt": "/Cow-Tracker/static/js/2.a6ae0356.chunk.js.LICENSE.txt",
     "static/media/Untitled.8de4752b.png": "/Cow-Tracker/static/media/Untitled.8de4752b.png",
     "static/media/bg.css": "/Cow-Tracker/static/media/bg.7d60f982.png",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.a6409ef9.js",
     "static/js/2.a6ae0356.chunk.js",
-    "static/css/main.03c32e5a.chunk.css",
+    "static/css/main.cf8bef03.chunk.css",
     "static/js/main.50aec1ef.chunk.js"
   ]
 }
