@@ -64,3 +64,9 @@ body,
 	left: 50%;
 	cursor: pointer;
 }
+@media screen and (max-width: 720px) {
+	.asas,
+	.cows {
+		flex-direction: column;
+	}
+}
