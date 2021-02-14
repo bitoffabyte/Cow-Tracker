@@ -5,6 +5,8 @@ import AuthProvider from './Context/AuthProvider';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './Components/Home';
 import Bg from './Components/bg';
+import Loading from './Components/Loading';
+import Maps from './Components/Maps';
 function App() {
 	return (
 		<Router>
@@ -17,6 +19,9 @@ function App() {
 						</Route>
 						<Route path='/home' exact>
 							<Home />
+						</Route>
+						<Route path='/map' exact>
+							<Maps />
 						</Route>
 					</Switch>
 				</AuthProvider>

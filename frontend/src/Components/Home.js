@@ -2,12 +2,16 @@ import { useEffect, useState } from 'react';
 import { useAuth } from '../Context/AuthProvider';
 import firebase from 'firebase';
 import 'firebase/database';
+import Loading from './Loading';
+import { useHistory } from 'react-router-dom';
 
 const Home = () => {
+	const history = useHistory();
 	const { currentUser } = useAuth();
 	const [n, uN] = useState('');
 	const [cows, updateCows] = useState([]);
 	var database = firebase.database();
+	const [l, uL] = useState(true);
 	const checkData = () => {
 		database
 			.ref()
@@ -59,32 +63,59 @@ const Home = () => {
 					if (snapshot.exists()) {
 						const notif = snapshot.val();
 						updateCows([...Object.values(notif)]);
+						uL(false);
 					}
 				});
 		}
 	}, [currentUser]);
 	return (
 		<div className='dib'>
+			{l ? <Loading /> : null}
 			<br />
-			cow list
-			<button>map</button>
+			<p
+				style={{
+					display: 'block',
+					margin: 'auto',
+					textAlign: 'center',
+					color: '#fff',
+				}}
+			>
+				<h1>Cow List</h1>
+			</p>
+			<button className='btn' onClick={() => history.push('/map')}>
+				map
+			</button>
 			<br />
-			{cows.map((i) => {
-				console.log(i);
-				return (
-					<>
-						<p>heart {i.heart}</p>
-						<p>id {i.id}</p>
-						<p>lat {i.lat}</p>
-						<p>long {i.long}</p>
-						<p>temp {i.temp}</p>
-					</>
-				);
-			})}
+			<div className='cows'>
+				{cows.map((i) => {
+					console.log(i);
+					return (
+						<div className='asas'>
+							<p>Cow Name: {i.id}</p>
+
+							<p>heart: {i.heart}</p>
+							<p>lat: {i.lat}</p>
+							<p>long: {i.long}</p>
+							<p>temp: {i.temp}</p>
+						</div>
+					);
+				})}
+			</div>
 			<br />
-			add cow
-			<input value={n} onChange={(e) => uN(e.target.value)} />
-			<button onClick={addCow}>Add Cow</button>
+			<div
+				style={{
+					width: '80vw',
+					margin: 'auto',
+					display: 'flex',
+					justifyContent: 'center',
+				}}
+			>
+				<p style={{ color: 'white' }}>Add Cow</p>
+				<input value={n} onChange={(e) => uN(e.target.value)} />
+				<button className='btn' onClick={addCow}>
+					Add Cow
+				</button>
+			</div>
 		</div>
 	);
 };
