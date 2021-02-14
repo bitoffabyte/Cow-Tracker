@@ -13,6 +13,7 @@ body,
 	height: 100vh;
 	position: relative;
 	z-index: 100;
+	overflow-y: none;
 }
 .bid {
 	display: flex;
@@ -29,4 +30,33 @@ body,
 }
 .bid img {
 	cursor: pointer;
+}
+.cows {
+	width: 90vw;
+	height: 70vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: auto;
+	flex-wrap: wrap;
+}
+
+.asas {
+	width: 25vw;
+	/* height: auto; */
+	display: flex;
+	/* flex-direction: column; */
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.555);
+	box-shadow: 3px 1px 38px -12px #00000094;
+	border-radius: 28px;
+	backdrop-filter: blur(50px);
+}
+.btn {
+	padding: 1%;
+	background-color: rgba(255, 255, 255, 0.74);
+	box-shadow: 3px 1px 38px -12px #00000094;
+	border-radius: 28px;
+	backdrop-filter: blur(50px);
 }
